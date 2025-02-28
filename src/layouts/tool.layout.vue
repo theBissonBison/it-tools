@@ -92,13 +92,13 @@ const themeVars = useThemeVars();
   overflow-x: auto;
 
   ::v-deep(& > *) {
-    flex: 0 1 1200px; //600px
+    flex: 0 1 5000px; //600px
     min-width:0;
   }
 }
 
 .tool-layout {
-  max-width: 1200px; // 600px
+  // max-width: 1200px; // 600px
   margin: 0 auto;
   box-sizing: border-box;
 
@@ -133,11 +133,13 @@ const themeVars = useThemeVars();
 .tool-footer {
     opacity: 0.7;
     font-size: 12px;
-    text-align: center;
+    text-align: left;
 
     ::v-deep(a) {
       color: v-bind('themeVars.textColor1');
       font-style: italic;
+      flex: 0 1 5000px;
+      width: 0px;
     }
   }
 </style>
